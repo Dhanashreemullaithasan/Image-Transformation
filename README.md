@@ -99,26 +99,33 @@ plt.show()
 
 ```
 ## Output:
-### i)Image Translation
+
 
 ![dipexp51](https://user-images.githubusercontent.com/94165415/232819541-8e7ce83d-1a4b-4ac1-906a-61ba7423e24e.png)
 
-### ii) Image Scaling
+### i)Image Translation
 
 ![dipex512](https://user-images.githubusercontent.com/94165415/232819632-344fcb56-d84b-47d1-bd60-7e0067a59f36.png)
 
+### ii) Image Scaling
+
+![dipex513](https://user-images.githubusercontent.com/94165415/232824890-53fc0909-81c0-4c51-92e7-65f59ce88f16.png)
+
 ### iii)Image shearing
 
-
+![dipex54](https://user-images.githubusercontent.com/94165415/232828115-ba9ea210-f499-4229-bd81-75d41cae54d4.png)
 
 ### iv)Image Reflection
-![Uploading dipex54.png…]()
 
+![dipex55](https://user-images.githubusercontent.com/94165415/232829794-7303fe8e-9f03-4416-99e6-8ed3a3e22068.png)
 
 ### v)Image Rotation
 
+![dipex56](https://user-images.githubusercontent.com/94165415/232830329-c676bb3d-3e2b-49b9-b9f6-27521f00720d.png)
 
 ### vi)Image Cropping
+
+![sodapdf-converted](https://user-images.githubusercontent.com/94165415/232830789-4d0779ee-fd93-47ad-a0d0-ce849abe0701.jpg)
 
 
 ## Result: 
