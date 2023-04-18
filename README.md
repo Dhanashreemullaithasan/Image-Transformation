@@ -23,80 +23,101 @@ Anaconda - Python 3.7
 
 ## Program:
 ```python
-Developed By:
-Register Number:
+Developed By: DHANASHREE M
+Register Number: 212221230018
+
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+img=cv2.imread('mount.jfif')
+img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+plt.axis('off')
+plt.imshow(img)
+plt.show()
+rows,cols,dim=img.shape
+
 i)Image Translation
+
+m=np.float32([[1,0,100],[0,1,200],[0,0,1]])
+t_img=cv2.warpPerspective(img,m,(cols,rows))
+plt.axis('off')
+plt.imshow(t_img)
+plt.show()
 
 
 ii) Image Scaling
 
+n=np.float32([[1.2,0,0],[0,1.2,0],[0,0,1]])
+s_img=cv2.warpPerspective(img,n,(cols*2,rows*2))
+plt.axis('off')
+plt.imshow(s_img)
 
 
 iii)Image shearing
+
+o_x=np.float32([[1,0.5,0],[0,1,0],[0,0,1]])
+p_y=np.float32([[1,0,0],[0.5,1,0],[0,0,1]])
+sh_x=cv2.warpPerspective(img,o_x,(int(cols*1.5),int(rows*1.5)))
+sh_y=cv2.warpPerspective(img,p_y,(int(cols*1.5),int(rows*1.5)))
+plt.axis('off')
+plt.imshow(sh_x)
+plt.imshow(sh_y)
+plt.show()
 
 
 
 iv)Image Reflection
 
-
-
+rows,cols,dim=img.shape
+q_x=np.float32([[1,0,0],[0,-1,rows],[0,0,1]])
+q_y=np.float32([[-1,0,cols],[0,1,0],[0,0,1]])
+r_img=cv2.warpPerspective(img,q_x,(int(cols),int(rows)))
+r_img1=cv2.warpPerspective(img,q_y,(int(cols),int(rows)))
+plt.axis('off')
+plt.imshow(r_img)
+plt.show()
+plt.imshow(r_img1)
+plt.show()
 
 v)Image Rotation
 
-
+angle=np.radians(40)
+r=np.float32([[np.cos(angle),-(np.sin(angle)),0],[np.sin(angle),np.cos(angle),0],[0,0,1]])
+ro=cv2.warpPerspective(img,r,(int(cols),int(rows)))
+plt.axis('off')
+plt.imshow(ro)
+plt.show()
 
 
 vi)Image Cropping
 
-
-
+c_img = img[120:600,120:600]
+plt.axis('off')
+plt.imshow(c_img)
+plt.show()
 
 
 ```
 ## Output:
 ### i)Image Translation
-<br>
-<br>
-<br>
-<br>
+
+![dipexp51](https://user-images.githubusercontent.com/94165415/232819541-8e7ce83d-1a4b-4ac1-906a-61ba7423e24e.png)
 
 ### ii) Image Scaling
-<br>
-<br>
-<br>
-<br>
 
+![dipex512](https://user-images.githubusercontent.com/94165415/232819632-344fcb56-d84b-47d1-bd60-7e0067a59f36.png)
 
 ### iii)Image shearing
-<br>
-<br>
-<br>
-<br>
+
 
 
 ### iv)Image Reflection
-<br>
-<br>
-<br>
-<br>
-
 
 
 ### v)Image Rotation
-<br>
-<br>
-<br>
-<br>
-
 
 
 ### vi)Image Cropping
-<br>
-<br>
-<br>
-<br>
-
-
 
 
 ## Result: 
